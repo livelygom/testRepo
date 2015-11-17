@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean name = "helloKor" class = "spring.di.hello.KorHello"/>
+	<bean name = "helloEng" class = "spring.di.hello.EngHello"/>
+	
+	<bean name = "greetingService" class = "spring.di.hello.service.GreetingService">
+		<constructor-arg ref = "helloKor"/> <!-- 컴포지션 관계  -->
+	</bean>
+</beans>
