@@ -7,7 +7,7 @@ public class EngHello implements Hello {
 		System.out.println("김성환 변경");
 		System.out.println("hiabcdef");
 		System.out.println("권효균 변경");
-		return "Hello! "+name;
+		return "Hello! "+name; 
 	}
 
 }
